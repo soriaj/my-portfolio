@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  /* font-family: 'Roboto Slab', serif; */
+  /* font-family: 'Lato', sans-serif; */
+}
+body {
+  font-family: "Open Sans", sans-serif; 
+  font-size: 20px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
+.nav,
+.footer {
+  padding: 1% 0;
+  background-color: #aaa;
+}
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  overflow: hidden;
+  background-color: transparent;
+}
+.nav a {
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.nav a.icon {
+  position: absolute;
+  right: 25px;
+  top: 12px;
+}
+.hidden {
+  display: none;
+}
+.logo {
+  color: black;
+  text-decoration: none;
+  float: left;
+  margin-left: 75px;
+}
+.nav > a.logo {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5em;
+}
+.menu_items {
+  flex-direction: column;
+  text-decoration: none;
+}
+header {
+  padding: 12% 0;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+}
+.banner_img {
+  background: 
+    linear-gradient(
+      rgba(110, 109, 109, 0.45), 
+      rgba(37, 37, 37, 0.45)
+    ),
+    url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80") no-repeat center center fixed;
+  background-size: cover; 
+}
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: #bbb;
+}
+section:nth-child(even) {
+  background-color: #ddd;
+}
+.section_container{
+  display: flex;
+  flex-grow: 1;
+  margin: 5px 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+.project_container {
+  border: 1px solid rgba(165, 163, 163, 0.876);
+  border-radius: 5px;
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.project_container img {
+  width: 150px;
+  border-radius: 5px;
+}
+.project_container h3 {
+  margin: 0;
+}
+.project_container p {
+  font-size: .7em;
+  margin: 0 0 10px 0;
+}
+.project_container a {
+  text-decoration: none;
+  color: white;
+  float: bottom;  
+}
+.icon_container {
+  padding: 20px;
+}
+.contact_icons {
+  color: white;
+}
+.contact_icons:hover {
+  color: rgb(121, 180, 248);
+  transition: 0.4s ease;
+}
+.footer {
+  font-size: .7em;
+}
+
+@media screen and (max-width: 768px){
+  .nav {
+    background-color:rgba(7, 6, 6, 0.924);
+  }
+  .nav #menu {
+    display: none;
+  }
+  .nav a {
+    color: white;
+  }
+  .nav > a.logo {
+    font-size: 1.2em;
+  }
+  .logo {
+    color: white;
+    margin-left: 20px;
+  }
+  .section_container {
+    flex-direction: column;
+  }
+  .project_container {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .project_container img {
+    /* width: 45%; */
+  }
+}
+
+/*
+Need to fix nav bar display
+Need to add screenshots of projects and descriptions
+need to add js store for projects images and links to live
+Review CSS Grid
+*/
