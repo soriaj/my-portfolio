@@ -21,7 +21,7 @@ h3 {
   font-size: 1.5em;
 }
 p {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 .nav,
 .footer {
@@ -203,6 +203,10 @@ section:nth-child(even) {
   }
   .icon_section_container{
     /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+  .footer {
+    font-size: .6em;
   }
 }
 
