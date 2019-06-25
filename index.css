@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-size: 16px;
+  margin: 0;
   /* font-family: 'Roboto Slab', serif; */
   /* font-family: 'Lato', sans-serif; */
 }
@@ -23,11 +24,7 @@ h3 {
 }
 p.about_me {
   font-size: 1.2em;
-}
-.nav,
-.footer {
-  padding: 1% 0;
-  background-color: #aaa;
+  text-shadow: .1px .1px #444;
 }
 .nav {
   text-align: right;
@@ -38,15 +35,14 @@ p.about_me {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
-  /* overflow: hidden; */
-  background-color: transparent;
 }
 .nav .logo {
   float: left;
   text-decoration: none;
   color: black;
   font-size: 26px;
+  margin-left: 25px;
+  top: 12px;
 }
 .menu {
   margin: 0 30px 0 0;
@@ -59,8 +55,7 @@ p.about_me {
   line-height: 70px;
 }
 .menu a:hover {
-  background-color: rgba(197, 199, 195, 0.637);
-  color: white;
+  color: rgb(45, 199, 31);
 }
 label {
   margin: 0 40px 0 0;
@@ -73,43 +68,6 @@ label {
 #toggle {
   display: none;
 }
-/* .nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  overflow: hidden;
-  background-color: transparent;
-}
-.nav a {
-  color: black;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.nav a.icon {
-  position: absolute;
-  right: 25px;
-  top: 12px;
-}
-.hidden {
-  display: none;
-}
-.logo {
-  color: black;
-  text-decoration: none;
-  float: left;
-  margin-left: 75px;
-}
-.nav > a.logo {
-  font-family: 'Roboto Slab', serif;
-  font-size: 1.5em;
-}
-.menu_items {
-  flex-direction: column;
-  text-decoration: none;
-} */
 header {
   padding: 12% 0;
   font-family: 'Roboto Slab', serif;
@@ -127,11 +85,9 @@ header {
 section {
   min-height: 200px;
   padding: 6% 0;
-  /* background-color: #bbb; */
   background-color: rgba(182, 182, 182, 0.863);
 }
 section:nth-child(even) {
-  /* background-color: #ddd; */
   background-color: rgba(255, 254, 254, 0.801);
 }
 .section_container{
@@ -232,12 +188,42 @@ section:nth-child(even) {
   color: rgba(24, 172, 24, 0.739);
 }
 .footer {
-  font-size: .7em;
+  font-size: .9em;
   font-weight: 600;
-  padding: 20px;
+  padding: 1% 0;
+  background-color: #aaa; */
 }
 
-@media screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
+  .nav {
+    background-color:rgba(7, 6, 6, 0.924);
+    transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* transition: all .5s ease-in-out */
+  }
+  label {
+    display: block;
+    cursor: pointer;
+    color: white;
+ }
+ .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+ }
+ .menu a {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.904);
+    margin: 0;
+    color: white;
+ }
+ .toggle:checked + .menu {
+    display: block;
+    /* transition-duration: 1s;
+	  transition-timing-function: cubic-bezier(0, 1, 0.5, 1); */
+ }
+ .nav .logo {
+   color: white;
+ }
   h1 {
     font-size: 1.8em;
   }
@@ -250,43 +236,6 @@ section:nth-child(even) {
   p.about_me {
     font-size: .9em;
   }
-  .nav {
-    background-color:rgba(7, 6, 6, 0.924);
-    color: white;
-  }
-  .nav .logo {
-    color: white;
-  }
-  label {
-    display: block;
-    cursor: pointer;
- }
- .menu {
-    text-align: center;
-    width: 100%;
-    display: none;
- }
- .menu a {
-    display: block;
-    border-bottom: 1px solid #EAEAEB;
-    margin: 0;
- }
- #toggle:checked + .menu {
-    display: block;
- }
-  /* .nav #menu {
-    display: none;
-  }
-  .nav a {
-    color: white;
-  }
-  .nav > a.logo {
-    font-size: 1.2em;
-  } */
-  .logo {
-    color: white;
-    margin-left: 20px;
-  }
   .about_me{
     width: 90%;
   }
@@ -298,21 +247,7 @@ section:nth-child(even) {
     margin-left: auto;
     margin-right: auto;
   }
-  .project_container img {
-    /* width: 45%; */
-  }
-  .icon_section_container{
-    /* flex-direction: column; */
-    /* flex-wrap: wrap; */
-  }
   .footer {
-    font-size: .6em;
+    font-size: .8em;
   }
 }
-
-/*
-Need to fix nav bar display
-Need to add screenshots of projects and descriptions
-need to add js store for projects images and links to live
-Review CSS Grid
-*/
