@@ -34,6 +34,7 @@ p.about_me {
   text-align: right;
   height: 70px;
   line-height: 70px;
+  background-color: transparent;
 }
 .menu {
   margin: 0 30px 0 0;
