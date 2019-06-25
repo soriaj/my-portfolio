@@ -42,6 +42,12 @@ p.about_me {
   overflow: hidden;
   background-color: transparent;
 }
+.nav .logo {
+  float: left;
+  text-decoration: none;
+  color: black;
+  font-size: 26px;
+}
 .menu {
   margin: 0 30px 0 0;
 }
@@ -246,6 +252,10 @@ section:nth-child(even) {
   }
   .nav {
     background-color:rgba(7, 6, 6, 0.924);
+    color: white;
+  }
+  .nav .logo {
+    color: white;
   }
   label {
     display: block;
