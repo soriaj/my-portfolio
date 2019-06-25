@@ -32,8 +32,14 @@ p.about_me {
 .nav {
   /* border-bottom: 1px solid #EAEAEB; */
   text-align: right;
-  height: 70px;
-  line-height: 70px;
+  /* height: 70px;
+  line-height: 70px; */
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  overflow: hidden;
   background-color: transparent;
 }
 .menu {
