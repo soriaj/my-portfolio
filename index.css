@@ -200,6 +200,9 @@ section:nth-child(even) {
   .main {
     margin-top: 3em;
   }
+  header {
+    padding: 3em;
+  }
   label {
     display: block;
     cursor: pointer;
