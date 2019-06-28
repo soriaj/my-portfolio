@@ -45,6 +45,13 @@ body {
   margin-top: 10px; 
   margin-left: 25px;
 }
+.active {
+  display: block;
+}
+.active ul {
+  transition-timing-function: ease-in-out;
+  -webkit-transition: all 0.2s
+}
 .main {
   text-align: center;
 }
@@ -139,6 +146,9 @@ header h2 {
 .app_desc a {
   margin-top: 15px;
 }
+.app_desc a span {
+  display: none;
+}
 .icon_section_container {
   width: 100%;
   display: flex;
@@ -148,6 +158,9 @@ header h2 {
 }
 .icon_container {
   padding: 20px;
+}
+.icon_container a span {
+  display: none;
 }
 .code_icons {
   width: 75%;
@@ -254,7 +267,7 @@ header h2 {
     font-size: 1.2em;
   }
   .projects {
-    width: 45%;
+    width: 40%;
     display: flex;
     flex-direction: row;
   }
