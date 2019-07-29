@@ -48,13 +48,6 @@ body {
   margin-top: 10px; 
   margin-left: 25px;
 }
-.active {
-  display: block;
-}
-.active ul {
-  transition-timing-function: ease-in-out;
-  -webkit-transition: all 0.2s
-}
 .main {
   text-align: center;
 }
