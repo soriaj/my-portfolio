@@ -11,20 +11,36 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <nav role="navigation" class="nav">
+    <nav role="navigation   " class="nav">
+        <a href="#" class="logo">{JS}</a>
+        <span class="js_menu"onclick="openNav()">Menu</span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn js_menu" onclick="closeNav()">Close</a>
+            <a href="#about_me">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#tech_stack">Technology Stack</a>
+            <a href="#contact_me">Contact Me</a>
+        </div>
+    </nav>
+              
+        <!-- Use any element to open the sidenav -->
+        
+
+    <!-- <nav role="navigation" class="nav">
         <span class="nav_toggle js_nav_toggle">
             <i class="fas fa-bars"></i>
         </span>
         <a href="#" class="logo">{JS}</a>
-        <ul class="menu js_menu">
+        <ul class="menu js_menu sidenav" id="mySidenav">
+            <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
             <li><a href="#about_me" class="nav_links">About Me</a></li>
             <li><a href="#projects" class="nav_links">Projects</a></li>
             <li><a href="#tech_stack" class="nav_links">Technology Stack</a></li>
             <li><a href="#contact_me" class="nav_links">Contact Me</a></li>
         </ul>
-    </nav>
+    </nav> -->
 
-    <main role="main" class="main">
+    <main role="main" id="main" class="main">
         <header role="banner" class="banner_img">
             <h1>Hi, I'm</h1>
             <h1>Javier Soria</h1>
@@ -35,39 +51,33 @@
             <p>When I'm not coding, I'm in front of clients. If not with a client I'm spending time with my family, at the gym or riding my motorcycle.</p>           
         </section>
         
-        <section role="projects" aria-label="Projects" id="projects" class="content_container">
+        <section role="projects" aria-label="Projects" id="projects" class="content_container   ">
             <h2>Projects</h2>
             <div class="projects">
                 <div class="section_container">
                     <a href="https://soriaj.github.io/quiz-app/" target="_blank" class="js_app_link">
-                        <img src="https://lh3.googleusercontent.com/uT264mE0nv8bK-jN8b1ZdHjDifCrD-Hl6qgZA2o20ATjcxYBFpx4YuYKi8ycyTwze1nOjwYj9k7PlGmXhIrzw3P5vrzmN5z9wQCN62CYNyGy3gzyYKSOaLZp27kgPX_b4gMPEJM2cKQg864CjgpZ_3QutoxcdnG61M0jHVFZv7IK8uLY0sktuZ8urXjGGfnyfi_nX6mXQwbV9Z6mdnryQnNQPEaTCZI7WuOtj8Q-MK0U882F-I55Z-URtT58mdGaOL780DfbcD5uzpWYeWSo4mts3_lc6MysXSs0neVVL1vDykDhck8ZRvN68saCWgrWPAeg95kbPYapDWIGuTXHwoWFnnKWDIAOpKtY7XgfoaAuTt9h8LZPXljSfWKrKvQOLS_vp40059QrrSQ8XGy7CjZUsyoHjmKxt4P1lKVU-Sh1mWOPuQaed9PaV4R_v3kYSqYjbEOBWmM-WXv7FfpXlopE5gDYVkrnzw8vIWlJsovdV5ApNS61JBaL6fJN90hEqRqy874-SaZsP-1V11t1ybEIskNzMOYNQz_wos2fTiQZUv2U8DLB5hNC5DjQ75SI7ei2WcX7_Igs0Vh8oJWIYu3LXPMTbewIeKDb9n1rRfTVM3NYN04E5dTsAIpSV9yLnjfwXXo27qKjf-TDtAE8FqC5uy9zd3DSBqULqI5mSeLXelB_yg_4KkB8y3-8rdN7FaJQ8VHKdquSJV7BadGFYJ4B=w1440-h900-no" alt="Quiz App">
+                        <img src="https://lh3.googleusercontent.com/s9qc2jiWvG6HxBb-52puD-ocF2ZuQhtThTpb7zg9skBLnBQoNJTFiGPhjRcjZt0nEEOLxdNMQf9kslME3bfYuhbOo17gYS73db1nPDjcV50V7cUYL39v1JueZALrvPKZu9LzkEEW1qdx0Lb6mC7Nq3Fy-dNPHKYdy5XzMmgwVmYbPwO5RUJ__ob-T-1MRv8HfXz9ywRJd8SAh1Y6nQEPLV4aSkKVNynCM5FGDv84Y28EpkoCpD8NGRm2j1dgoZrENexf1w_iOqVqRpFEsowaCychKiQkAQVLbMdySM_lD3fVp-n1agHWeV2PwJ2PGOXw8LmA1cgxjb4eoyjfd9BbbkfSjDWIe0Igxiw3KnxH9WfG1EvbbDfRv8jjJzsc0fqW4eOQ8DVTwx8Hy5pFL_kEDQHIQD_uHBu0rPzBgzhYeJ9kkjJdkMiC2E-On_2M4aiRRsMN8E15Ia5ebznwmFPbqBZLJVoJMQRMqaC8KR1Zoe7PD6nSbvh3OmY5bCgKSPfITg9OhhRBVam32a-WgsTWf3zXWCJhAugyUgJ4dvTzoXt1uMT0kPxNYdRA-ZISLI5ICs1H7VSEhfquHSIdCa82fvFc8NAgGLN2tIU0uQwIozHx-OoNvUJzCkuovx7VmaUdEFvUXrAXBVk9bjnmId_Fbi9HeZgbDbg1Q4Iv_ZNBk5GZ4zUVPmupJ0wqYc1SQ2LQRGG9zJdhRVZJFP2Q4s4GZLpF=w1487-h930-no" alt="Quiz App">
                     </a>
                     <div class="app_desc">
                         <h3>Quiz App</h3>
-                        <p class="js_app_desc">Quiz application to test your technology knowledge.</p>
+                        <p class="js_app_desc">Test your technology knowledge</p>
                         <p class="js_app_desc"><span>Created with: HTML, CSS, JQuery</span></p>
                         <a href="https://github.com/soriaj/quiz-app" target="_blank" class="js_github_src"><i class="fas fa-code "></i><span>github code repo icon</span></a>
                     </div>
                 </div>
-            </div>  
-        </section>
-        <!--FUTURE PROJECTS BELOW-->
-        <!-- <section id="projects" class="content_container">
-            <h2>Projects</h2>
-            <div class="projects">
                 <div class="section_container">
-                    <a href="https://soriaj.github.io/quiz-app/" target="_blank" class="js_app_link">
-                        <img src="https://lh3.googleusercontent.com/uT264mE0nv8bK-jN8b1ZdHjDifCrD-Hl6qgZA2o20ATjcxYBFpx4YuYKi8ycyTwze1nOjwYj9k7PlGmXhIrzw3P5vrzmN5z9wQCN62CYNyGy3gzyYKSOaLZp27kgPX_b4gMPEJM2cKQg864CjgpZ_3QutoxcdnG61M0jHVFZv7IK8uLY0sktuZ8urXjGGfnyfi_nX6mXQwbV9Z6mdnryQnNQPEaTCZI7WuOtj8Q-MK0U882F-I55Z-URtT58mdGaOL780DfbcD5uzpWYeWSo4mts3_lc6MysXSs0neVVL1vDykDhck8ZRvN68saCWgrWPAeg95kbPYapDWIGuTXHwoWFnnKWDIAOpKtY7XgfoaAuTt9h8LZPXljSfWKrKvQOLS_vp40059QrrSQ8XGy7CjZUsyoHjmKxt4P1lKVU-Sh1mWOPuQaed9PaV4R_v3kYSqYjbEOBWmM-WXv7FfpXlopE5gDYVkrnzw8vIWlJsovdV5ApNS61JBaL6fJN90hEqRqy874-SaZsP-1V11t1ybEIskNzMOYNQz_wos2fTiQZUv2U8DLB5hNC5DjQ75SI7ei2WcX7_Igs0Vh8oJWIYu3LXPMTbewIeKDb9n1rRfTVM3NYN04E5dTsAIpSV9yLnjfwXXo27qKjf-TDtAE8FqC5uy9zd3DSBqULqI5mSeLXelB_yg_4KkB8y3-8rdN7FaJQ8VHKdquSJV7BadGFYJ4B=w1440-h900-no" alt="Quiz App">
+                    <a href="https://soriaj.github.io/recipelicious/" target="_blank" class="js_app_link">
+                        <img src="https://lh3.googleusercontent.com/5IRTxVIWmbE83ArnzGjoR8mD-vZnFLJzPltxzJU_CpOEZRcbpuGz0FaWNl0iJUQHsMHG6G8mVvTFrtV_ydAy5-Qco3uWHx5TbD2sdG2jPGEFdh7csQmI1rKnUbz6G4ANJP1Ogt48W3FNM0CHyPI8MEpHHe9i4popi4aBPXPJ9gb1gPMYx9qPxQaq1DO2APazgWJSVkzLJ69BihNwvuE607oa3hXpUM4Smb9lJ9Fcf-2prgiw4N1Uz34SQo7h33Zymzk7eK3bphtH3a9Gf_vBzpIwr5_BrXQ0XNC5a8FVWoJiCzqIiWCPvzTk9F30nEOsIbokdGVtoO0tQygKm4w9W4kATND6RFyAFhaZoragWu9mFH5hQfyGyNePz6FUUlVjQSoiODIccoiW1zMu3EF4G6JuRbo2xCcDWdLAGckD0k4hgSIRqH1fUlhptR0khihZAW9Z446Ic7pfNiwoNxt3aeFx0MX5eDSeaxuLk3m-FVqTIxayHmH-aOUv-4xgLY6mVrcC2aRP9g7bWo-xa5zhVaKpllYWEOvoWknRSUejwcSwHvHPgFrHDM0lL2kZUvR4Q9xpmnaF6H1C21-YkidokCp3sq1jdYA57z-dv4O7MadV2xCKIpGATJfuIQLwnssuypvfl65ec-UxbU4S7Z8hIr4TL-7yOFCag59MMIcJ3DO0b98ZZOXohKsgEUTPtL2O2b4NjyxNZJfBmimEWcldez3C=w1487-h930-no" alt="Recipelicious App">
                     </a>
                     <div class="app_desc">
-                        <h3>Quiz App</h3>
-                        <p class="js_app_desc">Quiz application to test your technology knowledge.</p>
-                        <p class="js_app_desc"><span>Created with: HTML, CSS, JQuery</span></p>
-                        <a href="https://github.com/soriaj/quiz-app" target="_blank" class="js_github_src"><i class="fas fa-code fa-2x"></i></a>
+                        <h3>Recipelicious</h3>
+                        <p class="js_app_desc">Search over 1,000,000 Recipes</p>
+                        <p class="js_app_desc"><span>Created with: HTML, CSS, Javascript, JQuery</span></p>
+                        <a href="https://github.com/soriaj/recipelicious" target="_blank" class="js_github_src"><i class="fas fa-code fa-2x"></i></a>
                     </div>
                 </div>
-            </div>  
-        </section> -->
+            </div>
+        </section>
         <section role="technology_stack" aria-label="Technology Stack" id="tech_stack" class="content_container">
             <h2>Technology Stack</h2>
             <div class="icon_section_container code_icons">
