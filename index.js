@@ -1,16 +1,17 @@
 'use strict'
 
-let menu = $('.js_menu');
-let navToggle = $('.js_nav_toggle');
-
-function toggleMenu() {
-  navToggle.on('click', function(event){
-    menu.toggle('slow');
-  });
+function initPage(){
+  openNav();
+  closeNav();
 }
 
-function initPage(){
-  toggleMenu();
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
 }
 
 $(initPage);
