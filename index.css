@@ -311,6 +311,9 @@ header h2 {
 .main_nav_hamburger {
   color: white;
 }
+.main_nav_hamburger > span {
+  color: white;
+}
 .open-text {
   display: none;
 }
